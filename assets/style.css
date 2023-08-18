@@ -1,25 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&display=swap');
+
 *{
     padding:0;
     margin:0;
     box-sizing:border-box;
 }
 :root{
-    --green: #0B6464;
+    --green: #04948C;
+    --black: #333333;
+    --gray: #7A7A7A;
+    --lightGreen: #04A19C;
+    --darkGreen: #0B6464;
+    --lightBlue: #88D8D1;
 }
 
+body{
+    font-family:'Kumbh Sans',sans-serif;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
 header{
-    background-color:var(--green);
+    background-color:var(--darkGreen);
     text-align:center;
-    padding:20px;
+    padding:12px;
 }
 
 .banner{
     background-image:url('/images/negocios-demonstracao-tecweb-reunia-sistema-infoconsult.jpg');
     background-repeat:no-repeat;
     background-size:cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
 
-    
+    padding: 10% 25%;
+}
 
+.banner .centerInfo{
+    background-color:rgba(0, 0, 0, 0.5);
+    color:#fff;
 }
