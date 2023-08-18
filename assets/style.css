@@ -38,7 +38,7 @@ a{
 
 .img{
     border-radius:30px;
-    height:500px;
+    height:600px;
     object-fit:cover;
     width:100%;
 }
@@ -179,5 +179,47 @@ h2{
     font-size:18px;
     font-weight:400;
     line-height:1.6em;
-    list-style:upper-latin;
+    list-style:none;
+}
+
+.material-symbols-outlined{
+    color:var(--lightBlue)
+}
+.material-symbols-outlined:hover{
+    color:#fff;
+    transition:0.5s;
+}
+
+
+footer{
+    background-color:var(--black);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
+.footerLogo{
+    width:100%;
+    max-width:250px;
+    margin-bottom:20px;
+}
+footer .col{
+    padding:1em;
+}
+footer .row .col:first-child{
+    width:85%;
+}
+
+.copyright{
+    font-size:14px;
+    margin:1em;
+    border-top:1px solid var(--green);
+    width:100%;
+    text-align:center;
+
+    padding:20px 0;
+}
+.copyright a{
+    color:var(--green);
 }
