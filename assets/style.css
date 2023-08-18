@@ -12,27 +12,53 @@
     --lightGreen: #04A19C;
     --darkGreen: #0B6464;
     --lightBlue: #88D8D1;
+    --whiteBg: #F8F8F8;
 }
 
 body{
     font-family:'Kumbh Sans',sans-serif;
 }
-
+section{
+    display:flex;
+    justify-content:center;
+}
 a{
     text-decoration: none;
     color:inherit;
 }
+
+.limiter{
+    max-width: 1140px;
+}
+.bgImg{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.img{
+    border-radius:30px;
+    height:500px;
+    object-fit:cover;
+    width:100%;
+}
+
 header{
     background-color:var(--darkGreen);
     text-align:center;
     padding:12px;
 }
 
+#headerLogo{
+    filter:brightness( 130% );
+}
+
 .banner{
+    display:flex;
+    justify-content: center;
+
     background-image:url('/images/negocios-demonstracao-tecweb-reunia-sistema-infoconsult.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: center center;
+
     background-attachment: fixed;
 
     padding: 10% 25%;
@@ -42,15 +68,18 @@ header{
     background-color:rgba(40, 40, 40, 0.8);
     color:#fff;
     border-radius:10px;
-    padding:2em;
+    padding:3em 2em;;
     text-align:center;
+    max-width:700px;
 }
+
 h1{
     margin-bottom:20px;
     font-weight:500;
     line-height:1.2em;
     font-size:30px;
 }
+
 .description{
     line-height:1.4em;
     font-size:20px;
@@ -66,7 +95,6 @@ h1{
     color:var(--lightBlue);
 
     margin-bottom:20px;
-    
 }
 
 .btn{
@@ -77,7 +105,79 @@ h1{
     line-height:1.2em;
     padding:15px 30px;
     border-radius:4px;
+    margin:10px 0;
+    color:#fff;
+    width:fit-content;
+    transition:0.5;
 }
+
 .btn:hover{
-    transform:translateY(-8px);
+    margin-top:-5px;
+    transition:0.5;
+}
+
+.row{
+    display:flex;
+    padding:2em 0;
+}
+
+.col{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:50%;
+    min-height:500px;
+}
+.colImg{
+    padding:50px;
+}
+
+.upperTitle{
+    color:var(--green);
+    text-transform:uppercase;
+    font-weight:500;
+    margin-bottom:20px;
+}
+
+h2{
+    font-weight:500;
+    line-height:1.2em;
+    font-size:36px;
+    color:var(--black);
+    margin-bottom:20px;
+}
+
+.content p{
+    margin-bottom:10px;
+    color:var(--gray);
+    font-size:16px;
+    font-weight:400;
+    line-height:1.6em;
+}
+
+
+
+.colContentRight{
+    padding-right:5em;
+}
+
+.greenBg{
+    background-color:var(--green);
+    color:#fff;
+}
+
+.greenBg .title{
+    color:#fff;
+}
+
+.greenBg .btn{
+    background-color:var(--black);
+}
+
+.greenBg li{
+    margin: 5px 0;
+    font-size:18px;
+    font-weight:400;
+    line-height:1.6em;
+    list-style:upper-latin;
 }
