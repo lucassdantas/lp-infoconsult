@@ -17,6 +17,7 @@
 body{
     font-family:'Kumbh Sans',sans-serif;
 }
+
 a{
     text-decoration: none;
     color:inherit;
@@ -38,6 +39,45 @@ header{
 }
 
 .banner .centerInfo{
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(40, 40, 40, 0.8);
     color:#fff;
+    border-radius:10px;
+    padding:2em;
+    text-align:center;
+}
+h1{
+    margin-bottom:20px;
+    font-weight:500;
+    line-height:1.2em;
+    font-size:30px;
+}
+.description{
+    line-height:1.4em;
+    font-size:20px;
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.buttonDescription{
+    font-size:20px;
+    font-weight:400;
+    line-height:1.4em;
+    color:var(--lightBlue);
+
+    margin-bottom:20px;
+    
+}
+
+.btn{
+    background-color:var(--green);
+    font-size:16px;
+    font-weight:600;
+    text-transform:uppercase;
+    line-height:1.2em;
+    padding:15px 30px;
+    border-radius:4px;
+}
+.btn:hover{
+    transform:translateY(-8px);
 }
