@@ -1,0 +1,25 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+:root{
+    --green: #0B6464;
+}
+
+header{
+    background-color:var(--green);
+    text-align:center;
+    padding:20px;
+}
+
+.banner{
+    background-image:url('/images/negocios-demonstracao-tecweb-reunia-sistema-infoconsult.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    
+
+}
