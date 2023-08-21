@@ -291,6 +291,9 @@ footer .row .col:nth-child(2){
     p, .descriptionm, .buttonDescription, .btn{
         font-size:16px;
     }
+    .btnLink{
+        height:75px;
+    }
     .img{
         height:100%;
     }
@@ -323,7 +326,9 @@ footer .row .col:nth-child(2){
         padding-left:1em;
         padding-right:1em;
     }
-
+    .copyright p{
+        font-size:14px;
+    }
     footer h4{
         margin-top:20px;
     }
@@ -342,6 +347,9 @@ footer .row .col:nth-child(2){
 @media (max-width:555px){
     .banner .centerInfo{
         padding:2em 1em;
+    }
+    .btnLink{
+        height:100px;
     }
   
 }
