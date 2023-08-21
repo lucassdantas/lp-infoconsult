@@ -277,19 +277,25 @@ footer .row .col:nth-child(2){
 
 @media (max-width:858px){
     .banner{
-        padding:10% 15px;
+        padding:2% 15px;
+    }
+    .banner .btn{
+        font-size:14px;
     }
     .banner .centerInfo{
         max-width:95%;
     }
     h1{
-        font-size:18px;
+        font-size:24px;
     }
     h2, .h3{
         font-size:24px;
     }
-    p, .descriptionm, .buttonDescription, .btn{
+    p, .description, .buttonDescription, .btn{
         font-size:16px;
+    }
+    .btn{
+        text-align:center;
     }
     .btnLink{
         height:75px;
