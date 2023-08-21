@@ -129,14 +129,24 @@ h4{
     margin:10px 0;
     color:#fff;
     width:fit-content;
-    transition:0.5;
+    transition:margin 0.2s ease-in-out;
 }
 
 .btn:hover{
-    margin-top:-5px;
-    transition:0.5;
-}
+    margin-top:-2px;
+    transition:margin 0.2s ease-in-out;
 
+}
+.btnLinkCenter{
+    display:flex;
+    justify-content: center;
+}
+.btnLink{
+    display:flex;
+    transition:0.5s;
+    height:45px;
+    align-items:center;
+}
 .row{
     display:flex;
     padding:2em 0;
