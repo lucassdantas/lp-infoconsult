@@ -267,19 +267,65 @@ footer .row .col:nth-child(2){
     .banner .centerInfo{
         max-width:95%;
     }
+    h1{
+        font-size:18px;
+    }
+    h2, .h3{
+        font-size:24px;
+    }
+    p, .descriptionm, .buttonDescription, .btn{
+        font-size:16px;
+    }
+    .img{
+        height:100%;
+    }
     .row{
         flex-direction:column;
         align-items:center;
         justify-content:center;
         text-align:center;
     }
+    .mobileReverse{
+        flex-direction: column-reverse;
+    }
     .col, footer .row .col:first-child, footer .row .col:nth-child(2), .col:nth-child(1), .colContentRight{
         width:100%;
-        text-align:center;
         margin:0;
         padding:0;
         justify-content:center;
         align-items:center;
     }
-  
+    .row, footer .row{
+        padding:1em;
+        width:100%;
+        margin:0;
+        padding:1em;
+        justify-content:center;
+        align-items:center;
+    }
+    .copyright{
+        padding-left:1em;
+        padding-right:1em;
+    }
+    
+    footer h4{
+        margin-top:20px;
+    }
+    .upperTitle{
+        margin-top:20px;
+    }
+    .greenBg .col{
+        align-items:flex-start;
+        text-align:left;
+    }
+    .greenBg .h3{
+        text-align:left;
+        margin-top:20px;
+    }
 }
+@media (max-width:555px){
+    .btn{
+        font-size:2.5vw;
+    }
+}
+
