@@ -66,6 +66,8 @@ header{
 }
 
 #headerLogo{
+    width:100%;
+    max-width:250px;
     filter:brightness( 130% );
 }
 
@@ -260,7 +262,7 @@ footer .row .col:nth-child(2){
     color:var(--green);
 }
 
-@media (max-width:768px){
+@media (max-width:858px){
     .banner{
         padding:10% 15px;
     }
@@ -307,7 +309,7 @@ footer .row .col:nth-child(2){
         padding-left:1em;
         padding-right:1em;
     }
-    
+
     footer h4{
         margin-top:20px;
     }
@@ -324,8 +326,9 @@ footer .row .col:nth-child(2){
     }
 }
 @media (max-width:555px){
-    .btn{
-        font-size:2.5vw;
+    .banner .centerInfo{
+        padding:2em 1em;
     }
+  
 }
 
