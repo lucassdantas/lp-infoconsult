@@ -223,6 +223,9 @@ footer li{
 
 }
 
+.verticalPadding{
+    padding:2em 0;
+}
 .material-symbols-outlined{
     color:var(--lightBlue)
 }
@@ -300,6 +303,7 @@ footer .row .col:nth-child(2){
     .mobileReverse{
         flex-direction: column-reverse;
     }
+    
     .col, footer .row .col:first-child, footer .row .col:nth-child(2), .col:nth-child(1), .colContentRight{
         width:100%;
         margin:0;
@@ -315,7 +319,7 @@ footer .row .col:nth-child(2){
         justify-content:center;
         align-items:center;
     }
-    .copyright{
+    .copyright, .mobileHorizontalPadding{
         padding-left:1em;
         padding-right:1em;
     }
