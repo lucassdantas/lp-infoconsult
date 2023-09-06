@@ -121,9 +121,13 @@ header{
     padding:7px 20px;
 }
 .formSection form button{
+
     width:100%;
     background-color:unset;
     border:unset;
+}
+.formSection form button:hover{
+    cursor:pointer;
 }
 .formSection form button div{
     width:100%;
