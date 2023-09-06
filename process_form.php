@@ -20,7 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
     
     // Validate the email address
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo $errors['invalidEmail'];
+        echo '<script>alert("O e-mail é inválido")</script>';
+        header('location: ./index.php');
         exit;
     }
 
@@ -28,8 +29,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
     require_once 'includes/emailAcess.php';
     try {
         $mail = new PHPMailer();
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-
         $mail->isSMTP();
         $mail->Host = 'email-ssl.com.br';
         $mail->SMTPAuth = true;
@@ -50,14 +49,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
         ";
         if($mail->send()){
             echo 'Mensagem enviada com sucesso';
+            header('location: ./obrigado.php');
+            exit;
         };
     } catch (Exception $err) {
         echo "Erro ao enviar mensagem: \n
         <pre>$mail->ErrorInfo</pre>";
+        exit;
     }
     
 } else {
     echo "Você não tem permissão para acessar esta página.";
     header('location: ./index.php');
+    exit;
 }
 ?>
