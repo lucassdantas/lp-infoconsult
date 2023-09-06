@@ -90,7 +90,41 @@ header{
     text-align:center;
     max-width:700px;
 }
+.formSection {
+    flex-direction:column;
+    align-items:center;
+}
+.formSection form label{
+    font-size:20px;
+    font-weight:600;
+    line-height:1.4em;
+}
+.formSection form input{
+    width:100%;
+    margin-top:10px;
+    border-radius:4px;
+    background-color:var(--whiteBg);
+    border: 1px solid var(--lightBlue);
 
+    line-height:1.6em;
+    font-size:16px;
+
+    height:57px;
+    padding:7px 20px;
+}
+.formSection form button{
+    width:100%;
+    justify-content:center;
+    background-color:unset;
+    border:unset;
+}
+.formSection form button div{
+    width:100%;
+    background-color:var(--darkGreen);
+}
+.requiredMark{
+    color:#8d0909;
+}
 h1{
     margin-bottom:20px;
     font-weight:500;
