@@ -1,4 +1,9 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+require 'vendor/autoload.php';
+error_reporting(-1);
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
     
     $errors = array(
@@ -18,35 +23,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
         echo $errors['invalidEmail'];
         exit;
     }
+
     
-    require 'mailer/PHPMailerAutoload.php';
     require_once 'includes/emailAcess.php';
-    $mail = new PHPMailer();
-    $mail->isSMTP();
-    $mail->Host = 'email-ssl.com.br';
-    $mail->SMTPAuth = true;
-    $mail->SMTPSecure = 'ssl';
-    $mail->Username = $email;
-    $mail->Password = $pass;
-    $mail->Port = '465';
-    
-    $mail->setFrom($email);
-    $email->addReplyTo($email);
-    $email->$addAddress('lucasdantas.rdmarketingdigital@gmail.com');
+    try {
+        $mail = new PHPMailer();
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
 
-    $mail->Subject = "Novo Lead da Landing Page";
-    $mail->Body = " 
-        Nome:     $name \n
-        E-mail:   $email \n
-        Telefone: $phone
-    ";
+        $mail->isSMTP();
+        $mail->Host = 'email-ssl.com.br';
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = 'ssl';
+        $mail->Username = $sender_email;
+        $mail->Password = $pass;
+        $mail->Port = '465';
+        
+        $mail->setFrom($email);
+        $mail->addReplyTo($email);
+        $mail->addAddress('lucasdantas.rdmarketingdigital@gmail.com');
 
-    if (!$mail->send()) {
-        echo "Erro ao enviar mensagem.".$mail->ErrorInfo;
-    } else {
-        echo "E-mail enviado com sucesso";
-        header('location: ./obrigado.php');
+        $mail->Subject = "Novo Lead da Landing Page";
+        $mail->Body = " 
+            Nome:     $name \n
+            E-mail:   $email \n
+            Telefone: $phone
+        ";
+        $mail->send();
+        echo 'Mensagem enviada com sucesso';
+    } catch (Exception $err) {
+        echo "Erro ao enviar mensagem: \n".$mail->ErrorInfo;
     }
+    
 } else {
     echo "Você não tem permissão para acessar esta página.";
     header('location: ./index.php');
