@@ -93,6 +93,10 @@ header{
 .formSection {
     flex-direction:column;
     align-items:center;
+    padding:40px 0;
+}
+.formSection .col:nth-child(1){
+    margin-right:15px;
 }
 .formSection form label{
     font-size:20px;
@@ -114,13 +118,11 @@ header{
 }
 .formSection form button{
     width:100%;
-    justify-content:center;
     background-color:unset;
     border:unset;
 }
 .formSection form button div{
     width:100%;
-    background-color:var(--darkGreen);
 }
 .requiredMark{
     color:#8d0909;
