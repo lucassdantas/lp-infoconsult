@@ -94,6 +94,8 @@ header{
     flex-direction:column;
     align-items:center;
     padding:40px 0;
+    background-color:var(--green);
+    color:#fff;
 }
 .formSection .col:nth-child(1){
     margin-right:15px;
@@ -123,6 +125,7 @@ header{
 }
 .formSection form button div{
     width:100%;
+    background-color:#333333;
 }
 .requiredMark{
     color:#8d0909;
@@ -321,6 +324,8 @@ footer .row .col:nth-child(2){
     .banner .centerInfo{
         max-width:95%;
     }
+    
+
     h1{
         font-size:24px;
     }
@@ -356,7 +361,7 @@ footer .row .col:nth-child(2){
         justify-content:center;
         align-items:center;
     }
-    .row, footer .row{
+    .row, footer .row, .formSection{
         padding:1em;
         width:100%;
         margin:0;
@@ -380,6 +385,16 @@ footer .row .col:nth-child(2){
     .greenBg .col{
         align-items:flex-start;
         text-align:left;
+    }
+    .formSection{
+      text-align:center;
+    }
+    .formSection .row, .formSection .col:nth-child(1){
+        margin:0;
+        padding:0;
+    }
+    .formSection label{
+        margin-top:20px;
     }
     .greenBg .h3{
         text-align:left;
