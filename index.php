@@ -5,36 +5,33 @@
 
 ?>
     <main>
-        <section class='banner bgImg'>
+        <section id='formSection' class='banner bgImg'>
             <div class='centerInfo'>
                 <h1 class='title'>Buscando informação segura e atualizada para realizar as suas importações?</h1>
                 <p class="description">Evite perda de tempo, dinheiro e multas! Faça suas importações utilizando o nosso sistema TECWEB com informações claras e objetivas.</p>
-                <p class='buttonDescription'> Aproveite! Clique no botão abaixo e fale conosco agora para uma demonstração grátis e sem compromisso.</p>
-                <a class='btnLink btnLinkCenter' href='https://api.whatsapp.com/send?phone=5521986940829&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20gr%C3%A1tis%20do%20sistema%20TecWeb' target='_blank'> <div class="btn">Quero uma demonstração grátis</div> </a>
+                <p class='buttonDescription'> Aproveite! Cadastre-se agora para uma demonstração grátis e sem compromisso.</p>
+                <div class='formSection'>
+                    <form id='form' method="post" action="./process_form.php">
+                        <label for="name">Nome <span class='requiredMark'>*</span></label>
+                        <input type='text' name="name" placeholder="Nome" required>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">E-mail <span class='requiredMark'>*</span> </label>
+                                <input type='email' name="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="col">
+                                <label for="name">Telefone <span class='requiredMark'>*</span> </label>
+                                <input type='text' name="phone" placeholder="Telefone" required>
+                            </div>
+                        </div>
+                        <button type="submit" class='btnLink' name='sendBtn'> 
+                            <div class="btn">Quero uma demonstração grátis</div>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
-        <section class="formSection">
-            <h2 class="h3">CADASTRE-SE PARA DEMONSTRAÇÃO GRÁTIS</h2>
-            <div class="limiter">
-                <form method="post" action="./process_form.php">
-                    <label for="name">Nome <span class='requiredMark'>*</span></label>
-                    <input type='text' name="name" placeholder="Nome" required>
-                    <div class="row">
-                        <div class="col">
-                            <label for="email">E-mail <span class='requiredMark'>*</span> </label>
-                            <input type='email' name="email" placeholder="E-mail" required>
-                        </div>
-                        <div class="col">
-                            <label for="name">Telefone <span class='requiredMark'>*</span> </label>
-                            <input type='text' name="phone" placeholder="Telefone" required>
-                        </div>
-                    </div>
-                    <button type="submit" class='btnLink' name='sendBtn'> 
-                        <div class="btn">Quero uma demonstração grátis</div>
-                    </button>
-                </form>
-            </div>
-        </section>
+        
         <section class='whiteBg content'>
             <div class="row limiter">
                 <div class="col colImg">
@@ -46,7 +43,7 @@
                     <p>É o Sistema com um extenso banco de dados atualizado onde o usuário pode pesquisar as alíquotas do Imposto de Importação, IPI, ICMS, NCM, entre outros, assim como consultar a legislação de comércio exterior e efetuar estimativas de cálculo de importação.</p>
                     <p>O objetivo é evitar prejuízos de importação com cálculos errados, com multas e até mesmo perda de tempo, a TECWEB tem tudo o que você precisa para importar de maneira segura sem precisar fazer dezenas de pesquisas na internet que podem estar erradas ou desatualizadas.</p>
                     <p>Veja você mesmo como é fácil utilizar, fale conosco agora para uma demonstração grátis e sem compromisso.</p>
-                    <a class='btnLink' href='https://api.whatsapp.com/send?phone=5521986940829&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20gr%C3%A1tis%20do%20sistema%20TecWeb' target='_blank'> <div class="btn">Quero uma demonstração grátis</div></a>
+                    <a class='btnLink' href='#formSection'> <div class="btn">Quero uma demonstração grátis</div></a>
                 </div>
             </div>
         </section>
@@ -84,7 +81,7 @@
                             <span>Quem utiliza recomenda</span>
                         </li>
                     </ul>
-                    <a class='btnLink' href='https://api.whatsapp.com/send?phone=5521986940829&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20demonstra%C3%A7%C3%A3o%20gr%C3%A1tis%20do%20sistema%20TecWeb' target='_blank'> <div class="btn">Quero uma demonstração grátis</div></a>
+                    <a class='btnLink' href='#formSection'> <div class="btn">Quero uma demonstração grátis</div></a>
                 </div>
                 <div class="col colImg">
                     <img class='img' src="./images/Torne-se-um-especialista-em-comercio-exterior-com-a-InfoConsult.jpg" alt="Mulher e homem executivos com tablet">

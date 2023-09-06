@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
     
     $mail->setFrom($email);
     $email->addReplyTo($email);
-    $addAddress('josetiagoramos@rdmarketingdigital.com.br');
+    $addAddress('lucasdantas.rdmarketingdigital@gmail.com');
 
     $mail->Subject = "Novo Lead da Landing Page";
     $mail->Body = " 

@@ -79,7 +79,7 @@ header{
 
     background-attachment: fixed;
 
-    padding: 10% 25%;
+    padding: 10% 16%;
 }
 
 .banner .centerInfo{
@@ -91,10 +91,10 @@ header{
     max-width:700px;
 }
 .formSection {
+    text-align:left;
     flex-direction:column;
     align-items:center;
     padding:40px 0;
-    background-color:var(--green);
     color:#fff;
 }
 .formSection .col:nth-child(1){
@@ -125,7 +125,7 @@ header{
 }
 .formSection form button div{
     width:100%;
-    background-color:#333333;
+    background-color:var(--green);
 }
 .requiredMark{
     color:#8d0909;
