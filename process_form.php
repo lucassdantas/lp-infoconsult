@@ -38,20 +38,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
         $mail->Password = $pass;
         $mail->Port = '465';
         
-        $mail->setFrom($email);
-        $mail->addReplyTo($email);
+        $mail->setFrom($sender_email);
+        $mail->addReplyTo($email, 'Sistema TecWeb');
         $mail->addAddress('lucasdantas.rdmarketingdigital@gmail.com');
 
         $mail->Subject = "Novo Lead da Landing Page";
         $mail->Body = " 
-            Nome:     $name \n
-            E-mail:   $email \n
-            Telefone: $phone
+        Nome:     $name \n
+        E-mail:   $email \n
+        Telefone: $phone
         ";
-        $mail->send();
-        echo 'Mensagem enviada com sucesso';
+        if($mail->send()){
+            echo 'Mensagem enviada com sucesso';
+        };
     } catch (Exception $err) {
-        echo "Erro ao enviar mensagem: \n".$mail->ErrorInfo;
+        echo "Erro ao enviar mensagem: \n
+        <pre>$mail->ErrorInfo</pre>";
     }
     
 } else {
