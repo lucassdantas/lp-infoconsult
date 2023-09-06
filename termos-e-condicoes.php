@@ -6,7 +6,7 @@ $pageTitle = 'Termos e Condições';
     <main>
         <section class='banner bgImg'>
             <div class='centerInfo'>
-                <h1 class='title'>Política de privacidade</h1>
+                <h1 class='title'>Termos e condições</h1>
                 <p class="description">Valorizamos sua privacidade</p>
                 <a class='btnLink btnLinkCenter' href='./'> <div class="btn">Voltar</div> </a>
             </div>

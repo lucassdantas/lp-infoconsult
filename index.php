@@ -2,7 +2,7 @@
     require_once 'includes/head.php';
     require_once 'includes/header.php';
 
-    
+
 ?>
     <main>
         <section class='banner bgImg'>
@@ -16,7 +16,7 @@
         <section class="formSection">
             <h2 class="h3">CADASTRE-SE PARA DEMONSTRAÇÃO GRÁTIS</h2>
             <div class="limiter">
-                <form method="post" action="./">
+                <form method="post" action="./process_form.php">
                     <label for="name">Nome <span class='requiredMark'>*</span></label>
                     <input type='text' name="name" placeholder="Nome" required>
                     <div class="row">
@@ -29,10 +29,9 @@
                             <input type='text' name="phone" placeholder="Telefone" required>
                         </div>
                     </div>
-                    <button type="submit" class='btnLink'> 
+                    <button type="submit" class='btnLink' name='sendBtn'> 
                         <div class="btn">Quero uma demonstração grátis</div>
                     </button>
-
                 </form>
             </div>
         </section>
