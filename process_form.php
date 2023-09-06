@@ -3,7 +3,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
-error_reporting(-1);
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
     
     $errors = array(
@@ -18,14 +17,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
     $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
     $phone = htmlspecialchars($_POST['phone']);
     
-    // Validate the email address
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo '<script>alert("O e-mail é inválido")</script>';
         header('location: ./index.php');
         exit;
     }
 
-    
     require_once 'includes/emailAcess.php';
     try {
         $mail = new PHPMailer();
@@ -53,8 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
             exit;
         };
     } catch (Exception $err) {
-        echo "Erro ao enviar mensagem: \n
-        <pre>$mail->ErrorInfo</pre>";
+        echo '<script>alert("Ocorreu um erro")</script>';
+        header('location: ./index.php');
         exit;
     }
     
