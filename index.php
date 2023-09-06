@@ -13,15 +13,15 @@
                 <div class='formSection'>
                     <form id='form' method="post" action="./process_form.php">
                         <label for="name">Nome <span class='requiredMark'>*</span></label>
-                        <input type='text' name="name" placeholder="Nome" required>
+                        <input type='text' name="name" placeholder="Nome" maxlength='300' required>
                         <div class="row">
                             <div class="col">
                                 <label for="email">E-mail <span class='requiredMark'>*</span> </label>
-                                <input type='email' name="email" placeholder="E-mail" required>
+                                <input type='email' name="email" placeholder="E-mail" maxLength='300' required>
                             </div>
                             <div class="col">
                                 <label for="name">Telefone <span class='requiredMark'>*</span> </label>
-                                <input type='text' name="phone" placeholder="Telefone" required>
+                                <input type='text' name="phone" placeholder="Telefone" maxLength='100' required>
                             </div>
                         </div>
                         <button type="submit" class='btnLink' name='sendBtn'> 
