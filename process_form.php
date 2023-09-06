@@ -44,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
         echo "Erro ao enviar mensagem.".$mail->ErrorInfo;
     } else {
         echo "E-mail enviado com sucesso";
+        header('location: ./thank-you.php');
     }
 } else {
     echo "Você não tem permissão para acessar esta página.";

@@ -79,7 +79,7 @@ header{
 
     background-attachment: fixed;
 
-    padding: 10% 16%;
+    padding: 5% 16%;
 }
 
 .banner .centerInfo{
@@ -94,8 +94,10 @@ header{
     text-align:left;
     flex-direction:column;
     align-items:center;
-    padding:40px 0;
     color:#fff;
+}
+.formSection .row{
+    padding:1em 0;
 }
 .formSection .col:nth-child(1){
     margin-right:15px;

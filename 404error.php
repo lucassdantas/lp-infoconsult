@@ -1,4 +1,6 @@
 <?php 
+    $pageTitle = 'Erro 404';
+
     require_once 'includes/head.php';
     require_once 'includes/header.php';
 ?>

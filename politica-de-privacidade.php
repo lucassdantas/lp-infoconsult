@@ -8,7 +8,6 @@
             <div class='centerInfo'>
                 <h1 class='title'>Política de privacidade</h1>
                 <p class="description">No Infoconsult, valorizamos sua privacidade e nos comprometemos a proteger suas informações pessoais. Esta política de privacidade descreve como coletamos e usamos informações pessoais quando você visita nosso site e outros sites que possuímos e operamos.</p>
-
                 <a class='btnLink btnLinkCenter' href='./'> <div class="btn">Voltar</div> </a>
             </div>
         </section>
