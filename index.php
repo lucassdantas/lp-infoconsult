@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WKZXVX53');</script>
-    <!-- End Google Tag Manager -->
+<?php 
+    require_once 'includes/head.php';
+    require_once 'includes/header.php';
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema TecWeb</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="shortcut icon" href="./images/favicon-infoconsult.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKZXVX53"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <header>
-        <a href='./'><img src="./images/logo-infoconsult.png" alt="Logo da empresa Infoconsult" class="logo" id="headerLogo"></a>
-    </header>
+    
+?>
     <main>
         <section class='banner bgImg'>
             <div class='centerInfo'>
@@ -115,28 +93,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="row limiter">
-            <div class="col">
-                <img src='./images/logo-infoconsult.png' class="footerLogo" alt="Logo da empresa infoconsult no rodapé do site">
-                <p>Descubra os benefícios da TECWEB e otimize suas operações de comércio exterior. Simplifique seu trabalho e impulsione o sucesso do seu negócio com a TECWEB da InfoConsult.</p>
-            </div>
-            <div class="col">
-                <h4>Links Úteis</h4>
-                <ul class="iconList">
-                    <li>
-                        <span class="icon material-symbols-outlined">chevron_right</span>
-                        <a href='./politica-de-privacidade'>Política de privacidade</a>
-                    <li>
-                        <span class="icon material-symbols-outlined">chevron_right</span>
-                        <a href='./termos-e-condicoes'>Termos e condições</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright limiter">
-            <p>Copyright © <span id='currentYear'>2023</span> Infoconsult – Todos os direitos reservados. | Desenvolvido por <a href='https://rdmarketingdigital.com.br' target="_blank" rel='author'>R&D Marketing Digital.</a> Agência de Marketing Digital.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<?php 
+    require_once 'includes/footer.php';
+?>

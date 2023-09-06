@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos e Condições - Sistema TecWeb</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="shortcut icon" href="./images/favicon-infoconsult.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-    <header>
-        <a href='./'><img src="./images/logo-infoconsult.png" alt="" class="logo" id="headerLogo"></a>
-    </header>
+<?php 
+$pageTitle = 'Termos e Condições';
+    require_once 'includes/head.php';
+    require_once 'includes/header.php';
+?>
     <main>
         <section class='banner bgImg'>
             <div class='centerInfo'>
@@ -33,28 +23,6 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="row limiter">
-            <div class="col">
-                <img src='./images/logo-infoconsult.png' class="footerLogo">
-                <p>Descubra os benefícios da TECWEB e otimize suas operações de comércio exterior. Simplifique seu trabalho e impulsione o sucesso do seu negócio com a TECWEB da InfoConsult.</p>
-            </div>
-            <div class="col">
-                <h4>Links Úteis</h4>
-                <ul class="iconList">
-                    <li>
-                        <span class="icon material-symbols-outlined">chevron_right</span>
-                        <a href='./politica-de-privacidade'>Política de privacidade</a>
-                    <li>
-                        <span class="icon material-symbols-outlined">chevron_right</span>
-                        <a href='./termos-e-condicoes'>Termos e condições</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright limiter">
-            <p>Copyright © <span id='currentYear'>2023</span> Infoconsult – Todos os direitos reservados. | Desenvolvido por <a href='https://rdmarketingdigital.com.br' target="_blank" rel='author'>R&D Marketing Digital.</a> Agência de Marketing Digital.</p>
-        </div>
-    </footer>
-</body>
-</html>
+<?php 
+    require_once 'includes/footer.php';
+?>
