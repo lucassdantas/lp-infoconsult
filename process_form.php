@@ -36,8 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
         
         $mail->setFrom($sender_email);
         $mail->addReplyTo($email, 'Sistema TecWeb');
-        $mail->addAddress('lucasdantas.rdmarketingdigital@gmail.com');
-
+        $mail->addAddress('josetiago.ramos@rdmarketingdigital.com.br');
+        $mail->addCC('lucasdantas.rdmarketingdigital@gmail.com');
+        $mail->addCC('comercial02@infoconsult.com.br');
         $mail->Subject = "Novo Lead da Landing Page";
         $mail->Body = " 
         Nome:     $name \n
@@ -56,7 +57,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sendBtn'])) {
     }
     
 } else {
-    echo "Você não tem permissão para acessar esta página.";
     header('location: ./index.php');
     exit;
 }

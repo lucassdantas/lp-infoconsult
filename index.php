@@ -5,7 +5,7 @@
 
 ?>
     <main>
-        <section id='formSection' class='banner bgImg'>
+        <section id='formulario' class='banner bgImg'>
             <div class='centerInfo'>
                 <h1 class='title'>Buscando informação segura e atualizada para realizar as suas importações?</h1>
                 <p class="description">Evite perda de tempo, dinheiro e multas! Faça suas importações utilizando o nosso sistema TECWEB com informações claras e objetivas.</p>
@@ -43,7 +43,7 @@
                     <p>É o Sistema com um extenso banco de dados atualizado onde o usuário pode pesquisar as alíquotas do Imposto de Importação, IPI, ICMS, NCM, entre outros, assim como consultar a legislação de comércio exterior e efetuar estimativas de cálculo de importação.</p>
                     <p>O objetivo é evitar prejuízos de importação com cálculos errados, com multas e até mesmo perda de tempo, a TECWEB tem tudo o que você precisa para importar de maneira segura sem precisar fazer dezenas de pesquisas na internet que podem estar erradas ou desatualizadas.</p>
                     <p>Veja você mesmo como é fácil utilizar, fale conosco agora para uma demonstração grátis e sem compromisso.</p>
-                    <a class='btnLink' href='#formSection'> <div class="btn">Quero uma demonstração grátis</div></a>
+                    <a class='btnLink' href='#formulario'> <div class="btn">Quero uma demonstração grátis</div></a>
                 </div>
             </div>
         </section>
@@ -81,7 +81,7 @@
                             <span>Quem utiliza recomenda</span>
                         </li>
                     </ul>
-                    <a class='btnLink' href='#formSection'> <div class="btn">Quero uma demonstração grátis</div></a>
+                    <a class='btnLink' href='#formulario'> <div class="btn">Quero uma demonstração grátis</div></a>
                 </div>
                 <div class="col colImg">
                     <img class='img' src="./images/Torne-se-um-especialista-em-comercio-exterior-com-a-InfoConsult.jpg" alt="Mulher e homem executivos com tablet">
